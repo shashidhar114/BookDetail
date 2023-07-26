@@ -1,0 +1,20 @@
+.form{
+    text-align: center;
+}
+input{
+    margin-top: 10px;
+    width: 180px;
+}
+.btn-primary{
+    width: 130px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+small{
+    color: red;
+}

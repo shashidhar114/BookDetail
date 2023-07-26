@@ -1,0 +1,48 @@
+.container{
+    width: 800px;
+    margin: 10px auto;
+    padding: 20px 25px;
+    background-color: #f7f7f7;
+    font-family: 'lucida Sans';
+    text-align: center;
+}
+
+.title{
+    width: 30%;
+    padding: 10px 25px;
+    background-color: hsl(0, 13%, 82%);
+}
+.author{
+    width: 30%;
+    padding: 10px 25px;
+    background-color: #fadbd8;
+}
+.year{
+    width: 30%;
+    padding: 10px 25px;
+    background-color: #b4f0d4;
+}
+
+tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 30%;
+}
+th{
+    text-align: center;
+    height: 15px;
+}
+button{
+    margin: 5px;
+    padding:5px;
+}
+td{
+    height: 15px;
+}
+
+.search-container{
+    margin-top: 20px;
+    text-align: center;
+}
+
+

@@ -1,0 +1,46 @@
+{
+  "Bookdetail": [
+    {
+      "id": 1,
+      "title": "ShaMaking India Awesomeshi",
+      "author": "Chetan Bhagat",
+      "PublishedYear": 1998
+    },
+    {
+      "id": 2,
+      "title": "Bhagavad Gita ",
+      "author": "S. Radhakrishna",
+      "PublishedYear": 1950
+    },
+    {
+      "id": 3,
+      "title": "Broken Wings",
+      "author": "Sarojini Naidu",
+      "PublishedYear": 1980
+    },
+    {
+      "id": 4,
+      "title": "Days of My Years",
+      "author": "H.P. Nanda",
+      "PublishedYear": 2000
+    },
+    {
+      "id": 6,
+      "title": "Ignited Minds ",
+      "author": "A.P.J. Abdul Kalam",
+      "PublishedYear": 2001
+    },
+    {
+      "title": "Thermodynamics",
+      "author": "Bansal",
+      "PublishedYear": 2000,
+      "id": 7
+    },
+    {
+      "title": "Power of Subconcious Mind",
+      "author": "Joseph Murphy",
+      "PublishedYear": 2023,
+      "id": 8
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<form class="form" #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+    <input type="text" placeholder="Enter Book title" name="title" required #bName="ngModel" ngModel><br>
+    <div>
+        <small *ngIf="bName.touched && bName.invalid">**This Field is Required</small>
+    </div>
+    <input type="text" placeholder="Enter Author Name" name="author" required #AuthorName="ngModel" ngModel><br>
+    <div>
+        <small *ngIf="AuthorName.touched && AuthorName.invalid">**This Field is Required</small>
+    </div>
+
+    <input type="number" placeholder="Enter Year" name="PublishedYear" required ngModel #year="ngModel"><br>
+    <div>
+        <small *ngIf="year.touched && year.invalid">**This Field is Required</small>
+    </div>
+    <button type="submit" class="btn-primary" [disabled]="!myForm.valid">Add Book Details</button>
+</form>

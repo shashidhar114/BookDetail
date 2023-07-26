@@ -1,0 +1,30 @@
+<div class="search-container">
+    <b><span>Search:</span></b>
+    <input type="text" [(ngModel)]="enteredSearchValue" placeholder="Book or Author Name" />
+</div>
+
+
+<div class="container">
+    <table matSort>
+        <thead>
+            <th >Book.ID</th>
+            <th [appSort]="myData" data-order="desc" data-name="title">Title</th>
+            <th [appSort]="myData" data-order="desc" data-name="author">Author</th>
+            <th [appSort]="myData" data-order="desc" data-name="PublishedYear">Published Year</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <ng-container let *ngFor="let dat of myData">
+                <tr *ngIf="enteredSearchValue ===''|| dat.title.toLowerCase().includes(enteredSearchValue)
+                 || dat.author.toLowerCase().includes(enteredSearchValue) ">
+                 <td class="title">{{dat.id}}</td>
+                    <td class="title">{{dat.title}}</td>
+                    <td class="author">{{dat.author}}</td>
+                    <td class="year">{{dat.PublishedYear}}</td>
+                    <td><button class="btn btn-danger" (click)='delete(dat.id)'>Delete</button></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
+<br>
